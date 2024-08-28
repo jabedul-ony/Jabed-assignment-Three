@@ -27,6 +27,14 @@
        .manrope{
         font-family: "Manrope", sans-serif;
        } 
+       .column{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+       }
+       .paper{
+        background-image: url(./assets/bg.jpg);
+
+       }
     </style>
 
 </head>
@@ -225,21 +233,23 @@
         </div>
       </section>
       <!-- end2 -->
-      <section class="container mx-auto mt-16">
+      <section class="container mx-auto my-20">
         <div>
           <p class="text-xs mx-auto my-7 font-semibold text-black text-center bg-lime-200 rounded-full px-2 py-1 h-5 w-32"><i class="fa-solid text-black fa-arrow-right"></i>Explore our works</p>
           <h1 class="font-extrabold text-4xl text-center mt-4 mb-6">Our Latest Portfolio</h1>
-          <p class="text-base text-center text-[#494949]">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+          <p class="text-xs text-center text-[#494949]">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 mx-4 my-6">
           <div>
-            <div class="card bg-base-100 shadow-xl p-4   lg:card-side h-56">
-              <figure class="p-4">
-                <img class="h-56 w-96"
-                  src="./assets/img1.png"
-                  alt="Home" />
-              </figure>
-              <div class="card-body">
+            <div class="card bg-base-100 shadow-xl grid grid-cols-1 h-[447px] w-auto   lg:grid-cols-2 h-auto w-[772px]">
+              <div>
+                <figure class="p-4">
+                  <img class="mx-4"
+                    src="./assets/img1.png"
+                    alt="Home" />
+                </figure>
+              </div>
+              <div class="card-body"> 
                 <h2 class="card-title">Commercial</h2>
                 <p class="text-xs">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
                 <div class="card-actions justify-start">
@@ -251,26 +261,79 @@
             
           </div>
           <div>
-            <div class="bg-slate-100 p-3">
-              
-                <img class="h-56 w-96 bg-slate-200 "
+            <div class="bg-white p-3 w-auto h-64 border border-red-600 lg:h-auto p-6 w-8">
+               <img class="h-56 lg:h-56 w-80"
                   src="./assets/img2.png"
                   alt="Home" />
-             
-              
-                
-              </div>
-            </div>
+             </div>
             
 
           </div>
-        </div>
+            <!-- div 2 -->
 
-      
+          <div class="column">
 
-      </section>
+            <div class="bg-white p-3 w-auto h-52 lg:h-auto p-6 w-96">
+              <img class="h-56 lg:h-56 w-80" src="./assets/img3.png" alt="">
+            </div>
+
+            <div>
+              <div class="card bg-base-100 shadow-xl grid grid-cols-1 h-[447px] w-auto   lg:grid-cols-2 h-auto w-[772px]">
+                <div>
+                  <figure class="p-4">
+                    <img class="mx-4"
+                      src="./assets/img1.png"
+                      alt="Home" />
+                  </figure>
+                </div>
+                <div class="card-body"> 
+                  <h2 class="card-title">Commercial</h2>
+                  <p class="text-xs">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+                  <div class="card-actions justify-start">
+                    <button class="btn bg-white font-bold">view result<i class="fa-solid fa-arrow-right bg-black text-white -rotate-45 h-8 w-8   rounded-2xl px-2 py-2"></i></button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            </div>
+
+            <div class="bg-white p-3 w-auto h-52 lg:h-auto p-6 w-96">
+              <img class="h-56 lg:h-56 w-80" src="./assets/img3.png" alt="">
+            </div>
+          </div>
+        </section>
+
+        <!-- sec44 -->
+        <section class="paper py-24 mt-7">
+          <div>
+            <p class="text-xs mx-auto font-semibold text-black bg-gray-400 rounded-full px-1 py-1 h-6 w-28"><i class="fa-solid text-black fa-arrow-right"></i>Let's Connect</p>
+            <h1 class="font-extrabold text-4xl text-center mt-4 mb-6">Let's discuss next project</h1>
+            <p class="text-xs text-center text-[#494949]">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+          </div>
+        </section>
       
 
     </main>
+    <footer class="bg-black py-24">
+      <div class="gap-2 mx-auto container mx-auto text-center">
+        <i class="fa-solid fa-arrow-right bg-[#ABEF5F] -rotate-45 h-8 w-8   rounded-2xl px-2 py-2"></i>
+   
+      <a class="text-xl text-white text-center mb-7  font-[900] text-3xl">Rinterio</a>
+      <p class="text-xs text-center text-[#494949]">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+    </div>
+    <div>
+      <ul class="text-white text-xs mx-auto flex gap-8">
+        <li>Home</li>
+        <li>Services</li>
+        <li>Portfolio</li>
+        <li>Contact us</li>
+        <li>Blogs</li>
+      </ul>
+    </div>
+
+
+    </footer>
 </body>
 </html>
